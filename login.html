@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <title>Iniciar sesión - Comunidad de egresados UNINTEP</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+
+    <!-- FORMULARIO DE INGRESO - EGRESADOS UNINTEP -->
+    <main>
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 0px;">
+    
+                <!-- Ingreso de Usuario y Contraseña -->
+                <div class="col-sm-5 login-section-wrapper py-5">
+                    <div class="band-wrapper py-5">
+                        <h3 class="text-center fw-bolder" style="color: #0038e3;">Comunidad de egresados</h3>
+                        <img src="img/logo.png" alt="Comunidad de egresados UNINTEP" title="Comunidad de egresados UNINTEP"
+                            class="logo-login mx-auto d-block">
+                    </div>
+                    <div class="login-wrapper px-1">
+                        <form class="px-5" action="">
+                            <h2 class="text-center text-body-emphasis mb-3">Iniciar sesión</h2>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Usuario*" required>
+                                <label for="floatingInput">Usuario*</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña*"
+                                    required>
+                                <label for="floatingPassword">Contraseña*</label>
+                            </div>
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me" required> Recordar mi acceso
+                                </label>
+                            </div>
+                            <a href="index.html" class="w-100 btn btn-lg boton-ingresar" type="submit">
+                                Ingresar
+                            </a>
+                            <br /><br />
+                            <a href="registro.html" class="w-100 btn btn-lg boton-registrar">
+                                Regístrate
+                            </a>
+                            <hr class="my-4">
+                            <a href="recuperarcontrasena.html" class="text-decoration-none link-offset-2 forgot-pass">Olvidé mi contraseña</a>
+                            <br />
+                            <a href="#" class="text-decoration-none link-offset-2 data-policies">Tratamiento de datos personales</a>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Fondo -->
+                <div class="bg col-sm-7 px-0 d-none d-sm-block min-vh-100" style="background: url('img/edificio-nuevo.png') no-repeat; background-size: cover;">
+                    <!-- <img src="img/edificio-nuevo.png" alt="Fondo UNINTEP" class="img-login-section"> -->
+                </div>
+    
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

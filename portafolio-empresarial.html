@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <title>Portafolio empresarial - Comunidad de egresados UNINTEP</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <style>
+        .image-container {
+            max-width: 80%;
+            height: 400px;
+            overflow: hidden; /* Garantiza que el contenido se mantenga dentro de los límites */
+        }
+    
+        .background-image {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+            opacity: 0;
+            transition: opacity 0.3s ease; /* Smooth transition on hover */
+        }
+    
+        .image-container:hover .overlay, .links-portafolios:hover .overlay {
+            text-decoration: underline !important;
+            text-decoration-thickness: 3px !important;
+            text-decoration-color: #ffc000 !important;
+            opacity: 1; /* Show overlay on hover */
+        }
+    
+        .overlay-content {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Portafolio empresarial -->
+    <main>
+
+        <!-- Navbar - Menú de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="img/logo.png" class="w-25" alt="Comunidad de egresados UNINTEP">
+                </a>
+
+                <!-- Navbar Toggler - Menú Responsive -->
+                <button
+                    class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav nav nav-underline ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-house"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-id-card"></i>
+                                Egresados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2 active">
+                                <i class="fa-solid fa-briefcase"></i>
+                                Portafolio empresarial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-newspaper"></i>
+                                Clasificados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-book-open"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-user"></i>
+                                Iniciar sesión
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="registro.html" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-clipboard-user"></i>
+                                Regístrate
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+        
+            </div>
+        </nav>
+
+        <!-- Portada de la página - Crear la clase 'hero' para la portada principal -->
+        <div class="d-flex mb-5 min-vh-100" lc-helper="background"
+            style="background:url('img/portadas/portafolio-empresarial.jpg') center / cover no-repeat; background-color:#ebe4e4; background-blend-mode: overlay;">
+            <div class="align-self-center text-center text-light mx-auto col-md-8">
+                <div class="lc-block mb-5">
+                    <div editable="rich">
+                        <h2 class="display-4 fw-bolder" style="color: #0038e3;">Portafolio Empresarial</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información general -->
+        <div class="container">
+            <div class="mb-5 text-start">
+                <p style="font-size: 18px">El egresado de nuestra Institución Universitaria es destacado por su capacidad emprendedora, aporta los conocimientos adquiridos gracias a su dedicación de su aprendizaje y con ello, logra suministrar bienes y servicios a la región, a nivel nacional, etc. Su portafolio empresarial, consta mostrar al público los emprendimientos que actualmente el egresado podrá ofrecer, mediante productos y sus servicios, con el objetivo de ampliar el comercio.</p>
+            </div>
+        </div>
+
+        <!-- Portadas: Servicios empresariales y Otros -->
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <div class="col-md-6 col-lg-6">
+                    <div class="mx-auto image-container position-relative">
+                        <div class="background-image" style="background-image: url('img/portadas/link-empresarial.png');"></div>
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="overlay-content text-center">
+                                <a class='text-decoration-none text-light link-offset-3 links-portafolios' href='/portafolios/servicios-profesionales.html'>
+                                    <h2 class="fw-bolder text-center">Servicios profesionales</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="mx-auto image-container position-relative">
+                        <div class="background-image" style="background-image: url('img/portadas/link-otros.png');"></div>
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="overlay-content text-center">
+                                <a class='text-decoration-none text-light link-offset-3 links-portafolios' href='/portafolios/otros-servicios.html'>
+                                    <h2 class="fw-bolder text-center">Otros servicios</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer - Pie de página -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo blanco -->
+                    <div class="col-md-4 mb-3">
+                        <img src="img/logo-blanco.png" class="w-50" alt="Footer - Egresados UNINTEP">
+                    </div>
+                    <!-- Información - Apoyo al egresado -->
+                    <div class="col-md-4 mt-4">
+                        <h3 class="fw-bolder">Apoyo al Egresado</h3>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle 10 # 6 - 21 <br>
+                            Roldanillo, Valle del Cauca <br>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/intepegresados" target="_blank"><i class="fab fa-facebook-f me-2"></i>Egresados -
+                                UNINTEP</a><br>
+                            <a href="mailto:egresados@intep.edu.co"><i class="fas fa-envelope me-2"></i>egresados@intep.edu.co</a>
+                        </p>
+                    </div>
+                    <!-- Información de inspección y vigilancia - Min. Educación -->
+                    <div class="col-md-4 mt-5">
+                        <span style="font-size: 15px;">
+                            "Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional", Artículo 2.5.3.2.11.2 Decreto 1330 de 2019.
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Derechos Reservados -->
+                <div class="mt-5 text-md-center">
+                    <p class="small mt-5">Hecho por <a href="https://github.com/pedromm90" target="_blank"><i class="fa-brands fa-github"></i> Pedro Muñeton Martínez.</a> &copy; 2025. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

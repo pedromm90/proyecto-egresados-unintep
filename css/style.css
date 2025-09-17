@@ -1,0 +1,244 @@
+/* Importación de Google Fonts: Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 8rem !important;
+}
+
+/* Menú Responsive - index.html */
+.menu-nav {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #0038e3;
+  padding: 10px 8px;
+}
+
+.info-general,
+.orgullo-unintep {
+  text-decoration: underline 5px #ffc000 !important;
+  text-underline-offset: 15px;
+}
+
+.card-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #ffc000;
+}
+
+.social-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list li {
+  padding: 10px;
+  color: #717171;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+/* Botones - Azul (predeterminado) */
+.boton-ingresar, .boton-registrar, .enviar-correo, .buscar-egresado, .agregar-redes, .subir-foto, .ver-perfil, .modal-msj, .modal-cerrar {
+  color: #fff;
+  background-color: #0038e3;
+}
+
+/* Botones - Amarillo (hover) */
+.boton-ingresar:hover, .boton-registrar:hover, .enviar-correo:hover, .buscar-egresado:hover, .agregar-redes:hover, .subir-foto:hover, .ver-perfil:hover, .modal-msj:hover, .modal-cerrar:hover {
+  color: #fff;
+  background-color: #ffc000;
+}
+
+/* Elementos de Bootstrap modificados */
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+  font-weight: 600;
+}
+
+.nav-underline .nav-link.active, .nav-underline {
+  border-bottom-width: 3.5px;
+  border-bottom-color: #ffc000;
+}
+
+.nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
+  color: #000000;
+  border-bottom-width: 3.5px;
+  border-bottom-color: #ffc000;
+}
+
+/* Links */
+.ver-mas:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #ffc000 !important;
+}
+
+.ver-mas-blue:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #1a2d4b !important;
+}
+
+/* Footer - Pie de página */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer span {
+  color: #adb5bd;
+}
+
+/* login.html*/
+.logo-login {
+  max-width: 30%;
+}
+
+/* registro.html */
+.logo-registro {
+  width: 15%;
+}
+
+.forgot-pass, .data-policies {
+  color: #000000;
+  font-size: 16px;
+}
+
+
+.forgot-pass:hover, .data-policies:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #ffc000 !important;
+}
+
+/* recuperarcontrasena.html - Olvidé mi contraseña */
+/* Link 'Volver' */
+.back-login {
+  font-weight: 500;
+}
+
+.back-login:hover,
+.footer-email:hover,
+.footer-facebook:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #ffc000 !important;
+}
+
+/* egresados.html */
+.buscar-egresado {
+  width: 50% !important;
+  margin-left: 10em !important;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------------- MEDIA QUERIES -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+
+/* Dispositivos medianos y normales */
+@media (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 10.5px;
+  }  
+
+  /* login, registro, forgotpass */
+  .col-sm-5 {
+    flex: 0 0 auto ;
+    width: 41.66666667%;
+  }
+
+  .col-sm-7 {
+    display: block !important;
+  }
+
+  .navbar-expand-lg {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+  }
+
+  .nav-underline .nav-link:hover {
+    border-bottom: 10%;
+  }
+
+}
+
+/* Dispositivos medianos y normales */
+@media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+/* Dispositivos pequeños (celulares) */
+@media (min-width: 576px) {
+  .nav-underline .nav-link, .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    max-width: max-content;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  /* egresados.html */
+  .buscar-egresado {
+    width: 75% !important;
+    margin-left: 4em !important;
+  }
+}
+
+
+
+/* Dispositivos más pequeños */
+@media (min-width: 320px) and (max-width: 575.98px) {
+  h2 {
+    text-align: center;
+  }
+
+  .nav-underline .nav-link, .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    max-width: max-content;
+  }
+
+  /* egresados.html */
+  .buscar-egresado {
+    width: 90% !important;
+    margin-left: 1.4em !important;
+  }
+}

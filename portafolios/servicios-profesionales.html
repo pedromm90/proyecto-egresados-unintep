@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <title>Comunidad de egresados - UNINTEP</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<style>
+    .link-programas {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .link-programas:hover {
+        text-decoration: underline !important;
+        text-decoration-thickness: 2.5px !important;
+        text-decoration-color: #ffc000 !important;
+    }
+</style>
+
+<body>
+    <!-- Servicios profesionales -->
+    <main>
+
+        <!-- Navbar - Menú de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../img/logo.png" class="w-25" alt="Comunidad de egresados UNINTEP">
+                </a>
+        
+                <!-- Navbar Toggler - Menú Responsive -->
+                <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav nav nav-underline ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-house"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-id-card"></i>
+                                Egresados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../portafolio-empresarial.html" class="nav-link link-offset-2 active">
+                                <i class="fa-solid fa-briefcase"></i>
+                                Portafolio empresarial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-newspaper"></i>
+                                Clasificados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-book-open"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../login.html" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-user"></i>
+                                Iniciar sesión
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../registro.html" class="nav-link link-offset-2">
+                                <i class="fa-solid fa-clipboard-user"></i>
+                                Regístrate
+                            </a>
+                        </li>
+        
+                    </ul>
+                </div>
+        
+            </div>
+        </nav>
+
+        <!-- Portada de la página - Crear la clase 'hero' para la portada principal -->
+        <div class="d-flex mb-5 min-vh-100" lc-helper="background"
+            style="background:url('../img/portadas/servicios-profesionales.jpeg')  center / cover no-repeat; background-color:#ebe4e4; background-blend-mode: overlay;">
+            <div class="align-self-center text-center text-light mx-auto col-md-8 offset-md-2">
+                <div class="lc-block mb-5">
+                    <div editable="rich">
+                        <h2 class="display-4 fw-bolder" style="color: #0038e3;">Servicios profesionales</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido de la página -->
+        <div class="container mb-5">
+            <div class="mb-5">
+                <h2 class="text-center">Egresados por ciclos</h2>
+            </div>
+        </div>
+
+        <!-- Listado de egresados, ordenados por ciclos -->
+        <div class="container mb-5">
+            <ul class="list-group list-group-flush">
+                <div class="accordion accordion-flush" id="egresadosCiclos">
+
+                    <!-- Técnicos Profesionales -->
+                    <div class="accordion-item">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tecnicos" aria-expanded="false" aria-controls="tecnicos" style="font-size: 17px; font-weight: 500;">
+                                Técnicos Profesionales
+                            </button>
+                        </h6>
+                        <div id="tecnicos" class="accordion-collapse collapse" data-bs-parent="egresadosCiclos">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Producción Agropecuaria</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Procesos Agroindustriales</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Producción Agrícola</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Expresión Gráfica y Digital</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Soporte de Sistemas Informáticos</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Contabilidad y Costos</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Técnico Profesional en Procesos Administrativos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tecnólogos -->
+                    <div class="accordion-item">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tecnologos" aria-expanded="false" aria-controls="tecnologos" style="font-size: 17px; font-weight: 500;">
+                                Tecnólogos
+                            </button>
+                        </h6>
+                        <div id="tecnologos" class="accordion-collapse collapse" data-bs-parent="egresadosCiclos">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Producción y Gestión Agropecuaria</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión Agroindustrial</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión Ambiental</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión de la Producción Agrícola</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Producción de Animación Digital</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión de Sistemas Informáticos</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión Contable</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Tecnología en Gestión Empresarial</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profesionales Universitarios -->
+                    <div class="accordion-item">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#universitarios" aria-expanded="false" aria-controls="universitarios" style="font-size: 17px; font-weight: 500;">
+                                Profesionales Universitarios
+                            </button>
+                        </h6>
+                        <div id="universitarios" class="accordion-collapse collapse" data-bs-parent="egresadosCiclos">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Administración Agropecuaria</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Profesional en Agroindustria</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Administración Ambiental</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Profesional en Diseño Visual Digital</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Ingeniería Informática</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Contaduría Pública</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 16px;">
+                                        <a href="#" class="link-offset-2 link-programas">Administración de Empresas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+
+        <!-- Footer - Pie de página -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo blanco -->
+                    <div class="col-md-4 mb-3">
+                        <img src="../img/logo-blanco.png" class="w-50" alt="Footer - Egresados UNINTEP">
+                    </div>
+                    <!-- Información - Apoyo al egresado -->
+                    <div class="col-md-4 mt-4">
+                        <h3 class="fw-bolder">Apoyo al Egresado</h3>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle 10 # 6 - 21 <br>
+                            Roldanillo, Valle del Cauca <br>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/intepegresados" target="_blank"><i
+                                    class="fab fa-facebook-f me-2"></i>Egresados -
+                                UNINTEP</a><br>
+                            <a href="mailto:egresados@intep.edu.co"><i
+                                    class="fas fa-envelope me-2"></i>egresados@intep.edu.co</a>
+                        </p>
+                    </div>
+                    <!-- Información de inspección y vigilancia - Min. Educación -->
+                    <div class="col-md-4 mt-5">
+                        <span style="font-size: 15px;">
+                            "Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
+                            Educación Nacional", Artículo 2.5.3.2.11.2 Decreto 1330 de 2019.
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Derechos Reservados -->
+                <div class="mt-5 text-md-center">
+                    <p class="small mt-5">Hecho por <a href="https://github.com/pedromm90" target="_blank"><i
+                                class="fa-brands fa-github"></i> Pedro Muñeton Martínez.</a> &copy; 2025. Todos los
+                        derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
